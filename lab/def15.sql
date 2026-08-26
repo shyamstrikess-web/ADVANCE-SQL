@@ -1,4 +1,4 @@
--Create table of employee with  EID, ENAME, DEPTNO,DEPTNAME, GENDER,AGE and BASICSAL and use cursor for loop
+--Create table of employee with  EID, ENAME, DEPTNO,DEPTNAME, GENDER,AGE and BASICSAL and use cursor for loop
 set serveroutput on
 declare
     i number;
