@@ -1,21 +1,21 @@
 DECLARE
-    -- Input department number matching EMP.DEPT data type
+   
     v_deptno      EMP.DEPT%TYPE := &enter_dept_no;
     
-    -- Counter to track fetched rows
+  
     v_count       NUMBER := 0;
 
-    -- User-defined exception
+  
     e_no_dept_found EXCEPTION;
 
-    -- Cursor to select matching records
+    
     CURSOR c_emp IS
         SELECT *
         FROM emp
         WHERE dept = v_deptno;
 
 BEGIN
-    -- Fetch records using implicit cursor loop
+
     FOR rec IN c_emp LOOP
         INSERT INTO emp_backup
         VALUES rec;
@@ -23,7 +23,7 @@ BEGIN
         v_count := v_count + 1;
     END LOOP;
 
-    -- Raise exception if no matching department was found
+   
     IF v_count = 0 THEN
         RAISE e_no_dept_found;
     ELSE
