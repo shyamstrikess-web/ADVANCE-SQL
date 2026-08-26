@@ -1,23 +1,23 @@
 SET SERVEROUTPUT ON;
 
 DECLARE
-    -- Input employee ID
+  
     v_empno         emp.emp_id%TYPE := &enter_emp_id;
     
-    -- Variable to hold commission
+  
     v_comm          emp.salary%TYPE;
 
-    -- User-defined exception
+  
     null_commission EXCEPTION;
 
 BEGIN
-    -- Implicit cursor (SQL%ROWCOUNT is managed automatically by Oracle)
-    SELECT salary -- Note: Using 'salary' since standard emp schema may lack 'comm'
+
+    SELECT salary 
     INTO v_comm
     FROM emp
     WHERE emp_id = v_empno;
 
-    -- Check if retrieved value is NULL
+   
     IF v_comm IS NULL THEN
         RAISE null_commission;
     ELSE
