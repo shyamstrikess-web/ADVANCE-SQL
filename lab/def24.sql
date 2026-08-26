@@ -5,7 +5,7 @@ DECLARE
     v_ename    employee.ename%TYPE;
     v_sal      employee.basicsal%TYPE;
 BEGIN
-    -- Fixed column name from 'basicsalary' to 'BASICSAL'
+  
     SELECT ename, basicsal 
     INTO v_ename, v_sal 
     FROM employee 
