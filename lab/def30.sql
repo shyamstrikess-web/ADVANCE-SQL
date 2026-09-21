@@ -1,3 +1,5 @@
+-- Write  a  program that  explains  the  use of  exception  trapping  functions SQLCODE and SQLERRM. 
+
 SET SERVEROUTPUT ON;
 
 DECLARE
