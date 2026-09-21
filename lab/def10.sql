@@ -1,4 +1,5 @@
---program to insert data
+--) Write a PL/SQL block to delete the record of an employee for a given EID. 
+
 
 set serveroutput on 
 declare 
