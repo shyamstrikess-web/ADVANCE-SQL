@@ -1,3 +1,4 @@
+--Write a program using implicit cursor to display the commission of given EMPNO, also raise a user-defined exception NULL _COMMISSION when no value (NULL) is available for commission.  (Use User Defined Exception)
 SET SERVEROUTPUT ON;
 
 DECLARE
