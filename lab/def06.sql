@@ -1,4 +1,4 @@
---wap to generate
+--Write a program to generate the numbers using LOOP, FOR LOOP and WHILE LOOP up to the number inputted by the user. 
 
 set serveroutput on
 declare
