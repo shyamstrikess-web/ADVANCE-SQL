@@ -1,3 +1,4 @@
+-- Write a PL/SQL block using a cursor to insert the records of employees in the EMP_BACKUP table for a given department number, also raise a user defined exception NO_DEPT_FOUND when no records are found for entered DEPT_NO. (Use User Defined Exception) 
 DECLARE
    
     v_deptno      EMP.DEPT%TYPE := &enter_dept_no;
