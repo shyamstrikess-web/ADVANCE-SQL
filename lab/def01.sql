@@ -1,10 +1,14 @@
---w.a.p that accept principle amount,rate of int.. and no of year and find simple int.
-set serveroutput on
-declare
-price number:=&price;
-rate number:=&rate;
-year number:=&year;
-interest number;
-begin
-interest:=price*rate*year/100;
-dbms_output.put_line('simple interest for item is'||price||
+-- w.a.p that accept principal amount, rate of interest, and no of years and find simple interest
+SET SERVEROUTPUT ON;
+
+DECLARE
+    v_price    NUMBER := &price;
+    v_rate     NUMBER := &rate;
+    v_year     NUMBER := &year;
+    v_interest NUMBER;
+BEGIN
+    v_interest := (v_price * v_rate * v_year) / 100;
+
+    DBMS_OUTPUT.PUT_LINE('Simple interest for principal ' || v_price || ' is: ' || v_interest);
+END;
+/
